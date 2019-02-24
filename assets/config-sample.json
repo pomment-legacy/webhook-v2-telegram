@@ -1,0 +1,18 @@
+{
+    "token": "REPLACE WITH YOUR ACTUAL TOKEN",
+    "webhookReceiver": {
+        "telegram": {
+            "name": "webhook_telegram",
+            "port": 7001
+        },
+        "pomment": {
+            "name": "webhook_telegram_pomment",
+            "port": 7002
+        }
+    },
+    "proxy": {
+        "enabled": false,
+        "address": "socks://127.0.0.1:1080"
+    },
+    "pommentAPIKey": "REPLACE WITH YOUR ACTUAL KEY"
+}

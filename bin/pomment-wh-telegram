@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+const argv = require('minimist')(process.argv.slice(2));
+const fs = require('fs-extra');
+const path = require('path');
+
+if (argv.h || argv.help) {
+    console.log('usage: pomment-wh-telegram config_file');
+    process.exit(0);
+}
+
+const data = fs.readJSONSync(path.resolve(process.cwd(), argv._[0]), { encoding: 'utf8' });
+
+require('../lib/daemon')(data);
