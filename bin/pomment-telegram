@@ -4,8 +4,11 @@ const argv = require('minimist')(process.argv.slice(2));
 const fs = require('fs-extra');
 const path = require('path');
 
-if (argv.h || argv.help) {
-    console.log('usage: pomment-wh-telegram config_file');
+// https://github.com/yagop/node-telegram-bot-api/issues/319
+process.env.NTBA_FIX_319 = 1;
+
+if (argv.h || argv.help || argv._[0] === 'help') {
+    console.log('usage: pomment-telegram config_file');
     process.exit(0);
 }
 

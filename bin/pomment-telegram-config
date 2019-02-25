@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+
+const argv = require('minimist')(process.argv.slice(2));
+const fs = require('fs-extra');
+const path = require('path');
+
+// https://github.com/yagop/node-telegram-bot-api/issues/319
+process.env.NTBA_FIX_319 = 1;
+
+if (argv.h || argv.help || argv._[0] === 'help') {
+    console.log('usage: pomment-telegram-config subcmd');
+    console.log('Sub commands:');
+    console.log('init                   - Get a new config file');
+    console.log('chatid config_file     - Set recent chat ID as allowed one');
+    process.exit(0);
+}
+
+switch (argv._[0]) {
+    case 'init': {
+        let configFileName = 'config.json';
+        if (fs.existsSync('config.json')) {
+            let d = 0;
+            while (fs.existsSync(`config.${d}.json`)) {
+                d += 1;
+            }
+            configFileName = `config.${d}.json`;
+        }
+        fs.copyFileSync(
+            path.resolve(__dirname, '../assets/config-sample.json'),
+            path.resolve(process.cwd(), configFileName),
+        );
+        console.log(`Template config file copied to \x1b[33m${path.resolve(process.cwd(), configFileName)}\x1b[0m`);
+        break;
+    }
+    case 'chatid': {
+        require('../lib/chat-id')();
+        break;
+    }
+    default: {
+        break;
+    }
+}

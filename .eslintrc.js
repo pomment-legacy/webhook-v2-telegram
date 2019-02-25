@@ -10,6 +10,7 @@ module.exports = {
         "prefer-destructuring": "off",
         "max-len": "off",
         "no-console": "off",
+        "global-require": "off"
     },
     "env": {
         "node": true

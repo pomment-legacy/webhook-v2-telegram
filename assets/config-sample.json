@@ -1,5 +1,6 @@
 {
     "token": "REPLACE WITH YOUR ACTUAL TOKEN",
+    "allowedChatID": null,
     "webhookReceiver": {
         "telegram": {
             "name": "webhook_telegram",
