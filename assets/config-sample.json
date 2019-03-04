@@ -16,5 +16,6 @@
         "address": "socks://127.0.0.1:1080"
     },
     "indexFile": null,
-    "pommentAPIKey": "REPLACE WITH YOUR ACTUAL KEY"
+    "pommentAPIKey": "REPLACE WITH YOUR ACTUAL KEY",
+    "pommentAPIServer": "http://example.com"
 }
