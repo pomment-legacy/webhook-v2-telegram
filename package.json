@@ -4,7 +4,7 @@
   "description": "可以向使用 Telegram 的博主通过 Telegram 推送提醒",
   "repository": {
     "type": "git",
-    "url": "git@git.reallserver.cn:pomment/webhook-email.git"
+    "url": "https://github.com/pomment/webhook-telegram"
   },
   "author": "tcdw <tcdw2011@gmail.com>",
   "license": "BSD-3-Clause",
@@ -16,6 +16,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "fs-extra": "^7.0.1",
+    "json5": "^2.1.0",
     "log4js": "^4.0.2",
     "minimist": "^1.2.0",
     "node-telegram-bot-api": "^0.30.0",

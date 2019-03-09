@@ -61,4 +61,4 @@ Pomment 的 Telegram 机器人服务。
 ```
 
 4. 在 Pomment 服务端设置 webhook
-5. 启动服务端：`pomment-telegram [你的配置文件位置]`。建议使用 pm2、systemd 等工具保持程序持久运行
+5. 启动服务端：`pomment-telegram [你的配置文件位置]`。建议使用 pm2、systemd 等工具保持程序持久运
