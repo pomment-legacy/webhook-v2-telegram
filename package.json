@@ -1,6 +1,6 @@
 {
   "name": "pomment-webhook-telegram",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "可以向使用 Telegram 的博主通过 Telegram 推送提醒",
   "repository": {
     "type": "git",
@@ -22,5 +22,10 @@
     "node-telegram-bot-api": "^0.30.0",
     "socks5-client": "^1.2.6",
     "socks5-https-client": "^1.2.1"
-  }
+  },
+  "bin": {
+    "pomment-telegram": "./bin/pomment-telegram",
+    "pomment-telegram-config": "./bin/pomment-telegram-config"
+  },
+  "preferGlobal": true
 }
