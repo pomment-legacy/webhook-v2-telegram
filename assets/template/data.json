@@ -1,6 +1,9 @@
 {
     "new-comment": "💡 New comment for <a href=\"{{url}}\">{{title}}</a> by <a href=\"{{website}}\">{{name}}</a>!\n\n{{name}} said:\n{{content}}",
     "reply-bad": "❎ Invaild quick reply request",
+    "delete-bad": "❎ Invaild delete request",
     "reply-progress": "🕙 Replying...",
-    "reply-success": "✅ Replied! <a href=\"{{url}}\">View thread</a>"
+    "delete-progress": "🕙 Deleting...",
+    "reply-success": "✅ Replied! <a href=\"{{url}}\">View thread</a>",
+    "delete-success": "✅ Deleted!"
 }
