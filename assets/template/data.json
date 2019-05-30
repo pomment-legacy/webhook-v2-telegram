@@ -7,11 +7,9 @@
     "reply-success": "✅ Replied! <a href=\"{{url}}\">View thread</a>",
     "delete-success": "✅ Deleted!",
     "help": [
-        "<b>Pomment Telegram Bot</b> can help you receiving and handling ",
-        "new comments from your website quickly.",
-        "\n\n<b>Commands</b>",
-        "\n<pre>/delete</pre> - Delete specified comment you replied with.",
-        "\n<pre>/help</pre> - Display this help information.",
-        "\n\nIf you reply any other notification without speicified command, it will be considered as a reply to corresponding post."
+        "<code>/delete</code> - Delete specified comment you replied with.",
+        "\n<code>/help</code> - Display this help information.",
+        "\n\nIf you reply any other notification without speicified command, ",
+        "it will be considered as a reply to corresponding post."
     ]
 }
