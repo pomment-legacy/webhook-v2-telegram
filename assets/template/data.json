@@ -5,5 +5,13 @@
     "reply-progress": "🕙 Replying...",
     "delete-progress": "🕙 Deleting...",
     "reply-success": "✅ Replied! <a href=\"{{url}}\">View thread</a>",
-    "delete-success": "✅ Deleted!"
+    "delete-success": "✅ Deleted!",
+    "help": [
+        "<b>Pomment Telegram Bot</b> can help you receiving and handling ",
+        "new comments from your website quickly.",
+        "<br><br><b>Commands</b>",
+        "<br><pre>/delete</pre> - Delete specified comment you replied with.",
+        "<br><pre>/help</pre> - Display this help information.",
+        "<br><br>If you reply any other notification without speicified command, it will be considered as a reply to corresponding post."
+    ]
 }
