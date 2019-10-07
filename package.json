@@ -1,6 +1,6 @@
 {
   "name": "pomment-webhook-telegram",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "可以向使用 Telegram 的博主通过 Telegram 推送提醒",
   "repository": {
     "type": "git",
