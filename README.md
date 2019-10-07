@@ -61,4 +61,12 @@ Pomment 的 Telegram 机器人服务。
 ```
 
 4. 在 Pomment 服务端设置 webhook
-5. 启动服务端：`pomment-telegram [你的配置文件位置]`。建议使用 pm2、systemd 等工具保持程序持久运
+5. 让 Telegram Bot 使用你的 webhook。用浏览器访问以下网址：
+
+```bash
+https://api.telegram.org/bot[你的 Token]/setWebhook?url=[你的 Webhook 外部访问地址]
+```
+
+请替换成你实际的 Token 和外部访问地址。
+
+6. 启动服务端：`pomment-telegram [你的配置文件位置]`。建议使用 pm2、systemd 等工具保持程序持久运行
